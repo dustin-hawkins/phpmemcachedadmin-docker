@@ -15,9 +15,6 @@ RUN rm -rf /var/www/html/* && \
     git clone https://github.com/elijaa/phpmemcachedadmin.git /var/www/html/ && \
     mkdir /var/www/html/Config && \
     chown -R www-data:www-data /var/www/html
-
-# Define mountable directories
-RUN chown -R www-data:www-data /var/www/html
-
+    
 # Expose port
 EXPOSE 80
